@@ -58,6 +58,7 @@ export default function AuthProvider({ children }) {
     const handleLogout = () => {
         localStorage.removeItem('auth-token');
         setAuthInfo({ ...defaultAuthInfo });
+        navigate("/", { replace: true });
     }
 
     useEffect(() => {
