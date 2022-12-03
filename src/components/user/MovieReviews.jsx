@@ -175,7 +175,7 @@ const ReviewCard = ({ review }) => {
       </div>
       <div>
         <h1 className="dark:text-white text-secondary font-semibold text-lg">
-          John Doe
+          {owner.name}
         </h1>
         <RatingStar rating={rating} />
         <p className="text-light-subtle dark:text-dark-subtle">{content}</p>
